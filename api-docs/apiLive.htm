@@ -4795,6 +4795,7 @@ Successful transaction response:
 						<li><a href="#clients_activate">Activate a Pending Client</a>
 						<li><a href="#loans_approve">Approve a Pending Loan</a>
 						<li><a href="#loans_disburse">Disburse a Loan</a>
+						<li><a href="#loans_transaction_repayment">Repayment for a Loan</a>
 					</ul>
 				</div>
 			</div>
@@ -37366,6 +37367,20 @@ GET https://DomainName/api/v1/users/template
             "id": 1,
             "name": "Super user",
             "description": "This role provides all application permissions."
+        },
+	{
+            "id": 2,
+            "name": "Self Service User",
+            "description": "self service user role",
+            "disabled": false
+        }
+    ],
+    "selfServiceRoles": [
+        {
+            "id": 2,
+            "name": "Self Service User",
+            "description": "self service user role",
+            "disabled": false
         }
     ]
 }
